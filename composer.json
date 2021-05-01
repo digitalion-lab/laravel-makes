@@ -1,5 +1,5 @@
 {
-    "name": "digitalion/makes",
+    "name": "digitalion/laravel-makes",
     "description": "Collection of additional class creation commands for Artisan",
     "keywords": [
         "digitalion",

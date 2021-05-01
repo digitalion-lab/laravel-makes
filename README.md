@@ -1,4 +1,4 @@
-# Makes
+# Laravel Makes
 
 Collection of additional class creation commands for Artisan
 

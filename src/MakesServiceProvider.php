@@ -1,6 +1,6 @@
 <?php
 
-namespace Digitalion\Makes;
+namespace Digitalion\LaravelMakes;
 
 use Illuminate\Support\ServiceProvider;
 
