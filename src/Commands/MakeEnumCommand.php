@@ -25,7 +25,7 @@ class MakeEnumCommand extends GeneratorCommand
 	 *
 	 * @var string
 	 */
-	protected $description = 'Create a new enum';
+	protected $description = 'Create a new enum class';
 
 
 	/**
