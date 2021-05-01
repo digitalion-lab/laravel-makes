@@ -7,7 +7,7 @@ use Digitalion\LaravelMakes\Commands\MakeEnumCommand;
 use Digitalion\LaravelMakes\Commands\MakeHelperCommand;
 use Digitalion\LaravelMakes\Commands\MakeScopeCommand;
 use Digitalion\LaravelMakes\Commands\MakeTraitCommand;
-use Illuminate\Support\ServiceProvider as ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class LaravelMakesServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,8 @@
 {
     "name": "digitalion/laravel-makes",
     "description": "Collection of additional class creation commands for Artisan",
+	"type": "library",
+    "license": "MIT",
     "keywords": [
         "digitalion",
         "laravel",
@@ -11,8 +13,6 @@
         "class",
         "helper"
     ],
-    "prefer-stable": true,
-    "license": "MIT",
     "authors": [
         {
             "name": "Digitalion",
@@ -22,8 +22,13 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": ">=7",
 		"illuminate/support": ">=5.5"
+	},
+	"autoload": {
+	  "psr-4": {
+		"Digitalion\\LaravelMakes\\": "src"
+	  }
 	},
     "extra": {
         "laravel": {
