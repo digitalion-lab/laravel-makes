@@ -1,0 +1,25 @@
+{
+    "name": "digitalion/makes",
+    "description": "Collection of additional class creation commands for Artisan",
+    "keywords": [
+        "digitalion",
+        "laravel",
+        "artisan",
+        "make",
+        "commands",
+        "trait",
+        "class",
+        "helper"
+    ],
+    "prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniele Montecchi",
+            "email": "dev@digitalion.it",
+            "homepage": "https://digitalion.it",
+            "role": "Developer"
+        }
+    ],
+    "require": {}
+}
