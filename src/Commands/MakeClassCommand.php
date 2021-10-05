@@ -35,7 +35,12 @@ class MakeClassCommand extends GeneratorCommand
 	 */
 	protected function getStub()
 	{
-		return __DIR__ . '/stubs/class.stub';
+		$filename = strtolower($this->type);
+		$stub = app_path("stubs/$filename.stub");
+		if (!file_exists($stub)) {
+			$stub = __DIR__ . "../../stubs/$filename.stub";
+		}
+		return $stub;
 	}
 
 	/**

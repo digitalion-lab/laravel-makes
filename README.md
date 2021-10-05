@@ -1,8 +1,10 @@
-# Laravel Makes
+# ![][img-logo] Laravel Makes [![Power by][power-by]][link-digitalion]
 
-[![Packagist License](https://poser.pugx.org/digitalion/laravel-makes/license.png)](http://choosealicense.com/licenses/mit/)
-[![Latest Stable Version](https://poser.pugx.org/digitalion/laravel-makes/version.png)](https://packagist.org/packages/digitalion/laravel-makes)
-[![Total Downloads](https://poser.pugx.org/digitalion/laravel-makes/d/total.png)](https://packagist.org/packages/digitalion/laravel-makes)
+[![Packagist License][badge_license]](LICENSE.md)
+[![Packagist][badge_package]][link-packagist]
+[![Packagist Release][badge_version]][link-packagist]
+[![Packagist Downloads][badge_downloads]][link-packagist]
+[![Packagist Stars][badge_stars]][link-packagist]
 
 **Collection of additional class creation commands for Artisan**
 
@@ -67,3 +69,13 @@ php artisan make:trait DigitalionTrait
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[badge_license]: https://img.shields.io/github/license/digitalion-lab/laravel-makes
+[badge_stars]: https://img.shields.io/packagist/stars/digitalion/laravel-makes
+[badge_package]: https://img.shields.io/badge/package-digitalion/laravel--geo-blue.svg
+[badge_version]: https://img.shields.io/github/v/tag/digitalion-lab/laravel-makes
+[badge_downloads]: https://img.shields.io/packagist/dt/digitalion/laravel-makes
+[link-packagist]: https://packagist.org/packages/digitalion/laravel-makes
+[link-digitalion]: https://digitalion.it
+[power-by]: https://img.shields.io/badge/power%20by-Digitalion-orange
+[img-logo]: https://raw.githubusercontent.com/digitalion-lab/laravel-makes/master/icon_xs.png

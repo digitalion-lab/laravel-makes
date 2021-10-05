@@ -3,6 +3,7 @@
     "description": "Collection of additional class creation commands for Artisan",
 	"type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/digitalion-lab/laravel-makes",
     "keywords": [
         "digitalion",
         "laravel",
