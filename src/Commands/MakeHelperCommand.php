@@ -38,7 +38,7 @@ class MakeHelperCommand extends GeneratorCommand
 		$filename = strtolower($this->type);
 		$stub = app_path("stubs/$filename.stub");
 		if (!file_exists($stub)) {
-			$stub = __DIR__ . "../../stubs/$filename.stub";
+			$stub = __DIR__ . "/../../stubs/$filename.stub";
 		}
 		return $stub;
 	}
