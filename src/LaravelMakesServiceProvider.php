@@ -5,6 +5,7 @@ namespace Digitalion\LaravelMakes;
 use Digitalion\LaravelMakes\Commands\MakeClassCommand;
 use Digitalion\LaravelMakes\Commands\MakeEnumCommand;
 use Digitalion\LaravelMakes\Commands\MakeHelperCommand;
+use Digitalion\LaravelMakes\Commands\MakeInterfaceCommand;
 use Digitalion\LaravelMakes\Commands\MakeScopeCommand;
 use Digitalion\LaravelMakes\Commands\MakeTraitCommand;
 use Illuminate\Support\ServiceProvider;
