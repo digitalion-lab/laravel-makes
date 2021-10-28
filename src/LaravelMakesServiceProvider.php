@@ -53,6 +53,7 @@ class LaravelMakesServiceProvider extends ServiceProvider
 				MakeClassCommand::class,
 				MakeEnumCommand::class,
 				MakeHelperCommand::class,
+				MakeInterfaceCommand::class,
 				MakeScopeCommand::class,
 				MakeTraitCommand::class,
 			]);
