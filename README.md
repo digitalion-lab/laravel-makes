@@ -70,12 +70,12 @@ php artisan make:trait DigitalionTrait
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[badge_license]: https://img.shields.io/github/license/digitalion-lab/laravel-makes
+[badge_license]: https://img.shields.io/github/license/digitalion/laravel-makes
 [badge_stars]: https://img.shields.io/packagist/stars/digitalion/laravel-makes
 [badge_package]: https://img.shields.io/badge/package-digitalion/laravel--geo-blue.svg
-[badge_version]: https://img.shields.io/github/v/tag/digitalion-lab/laravel-makes
+[badge_version]: https://img.shields.io/github/v/tag/digitalion/laravel-makes
 [badge_downloads]: https://img.shields.io/packagist/dt/digitalion/laravel-makes
 [link-packagist]: https://packagist.org/packages/digitalion/laravel-makes
 [link-digitalion]: https://digitalion.it
 [power-by]: https://img.shields.io/badge/power%20by-Digitalion-orange
-[img-logo]: https://raw.githubusercontent.com/digitalion-lab/laravel-makes/master/icon_xs.png
+[img-logo]: https://raw.githubusercontent.com/digitalion/laravel-makes/master/icon_xs.png
