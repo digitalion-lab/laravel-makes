@@ -35,8 +35,11 @@ class MakeEnumCommand extends GeneratorCommand
 	 */
 	protected function getStub()
 	{
+		$php_versions = explode('.', phpversion());
+		$stub_suffix = intval($php_versions[0] . $php_versions[1]) >= 81 ? '_81' : '';
+
 		$filename = strtolower($this->type);
-		$stub = app_path("stubs/$filename.stub");
+		$stub = app_path("stubs/$filename$stub_suffix.stub");
 		if (!file_exists($stub)) {
 			$stub = __DIR__ . "/../../stubs/$filename.stub";
 		}
