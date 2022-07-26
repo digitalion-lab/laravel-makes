@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Digitalion\LaravelMakes\Enums\EnumSerializableTrait;
+use Digitalion\LaravelMakes\Traits\EnumSerializableTrait;
 
 final class DummyClass
 {

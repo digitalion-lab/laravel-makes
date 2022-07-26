@@ -1,6 +1,6 @@
 <?php
 
-namespace Digitalion\LaravelMakes\Enums;
+namespace Digitalion\LaravelMakes\Traits;
 
 use ReflectionClass;
 
