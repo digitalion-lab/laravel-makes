@@ -12,6 +12,10 @@
 
 This package expands on the basic artisan commands for creating classes.
 
+### Base stub
+
+To customize the generation of Laravel classes, read the [Laravel Documentation](https://laravel.com/docs/master/artisan#stub-customization).
+
 ## Installation
 
 Require this package with composer. It is recommended to only require the package for development.
@@ -80,7 +84,7 @@ php artisan make:trait DigitalionTrait
 
 ### Get the array options
 
-```
+```php
 $options = DigitalionEnum::options();
 
 // dump $options
@@ -93,7 +97,7 @@ $options = DigitalionEnum::options();
 
 ### Get the array values
 
-```
+```php
 $values = DigitalionEnum::values();
 
 // dump $values
@@ -106,7 +110,7 @@ $values = DigitalionEnum::values();
 
 ### Get the array keys
 
-```
+```php
 $keys = DigitalionEnum::keys();
 
 // dump $keys
@@ -122,7 +126,7 @@ $keys = DigitalionEnum::keys();
 This method returns a string with all the values of the enum, divided by the comma.
 You may find this useful if you use it in Laravel's validation rules such as [`in:`](https://laravel.com/docs/master/validation#rule-in).
 
-```
+```php
 $valuesString = DigitalionEnum::valuesImplode();
 
 // dump $valuesString
@@ -134,7 +138,7 @@ $valuesString = DigitalionEnum::valuesImplode();
 This method returns a string with regex to validate the Enum values.
 You may find this useful by using it in routes to accept only its values in parameters ([Laravel Docs - Regular Expression Constraints](https://laravel.com/docs/master/routing#parameters-regular-expression-constraints)).
 
-```
+```php
 $valuesRegex = DigitalionEnum::valuesRegex();
 
 // dump $valuesRegex
