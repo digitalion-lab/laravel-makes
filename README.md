@@ -42,6 +42,8 @@ Create a new enum class in: `App\Enums\`
 php artisan make:enum DigitalionEnum
 ```
 
+Enums implement the trait `Digitalion\LaravelMakes\Traits\EnumSerializableTrait` that adds useful methods for using enums. [View the enum methods](#enum-methods)
+
 ### make:helper
 
 Create a new helper class in: `App\Helpers\`
@@ -58,12 +60,112 @@ Create a new query scope class in: `App\Scopes\`
 php artisan make:scope DigitalionScope
 ```
 
+### make:service
+
+Create a new query scope class in: `App\Services\`
+
+```shell
+php artisan make:service DigitalionService
+```
+
 ### make:trait
 
 Create a new trait class in: `App\Traits\`
 
 ```shell
 php artisan make:trait DigitalionTrait
+```
+
+## Enum methods
+
+### Get the array options
+
+```
+$options = DigitalionEnum::options();
+
+// dump $options
+[
+	'key1'	=> 'value1',
+	'key2'	=> 'value2',
+	'key3'	=> 'value3',
+]
+```
+
+### Get the array values
+
+```
+$values = DigitalionEnum::values();
+
+// dump $values
+[
+	'value1',
+	'value2',
+	'value3',
+]
+```
+
+### Get the array keys
+
+```
+$keys = DigitalionEnum::keys();
+
+// dump $keys
+[
+	'key1',
+	'key2',
+	'key3',
+]
+```
+
+### Get the string values
+
+This method returns a string with all the values of the enum, divided by the comma.
+You may find this useful if you use it in Laravel's validation rules such as [`in:`](https://laravel.com/docs/master/validation#rule-in).
+
+```
+$valuesString = DigitalionEnum::valuesImplode();
+
+// dump $valuesString
+'value1,value2,value3'
+```
+
+### Get the regex values
+
+This method returns a string with regex to validate the Enum values.
+You may find this useful by using it in routes to accept only its values in parameters ([Laravel Docs - Regular Expression Constraints](https://laravel.com/docs/master/routing#parameters-regular-expression-constraints)).
+
+```
+$valuesRegex = DigitalionEnum::valuesRegex();
+
+// dump $valuesRegex
+'(value1|value2|value3)$'
+```
+
+### Get the translated array
+
+By passing the translation key prefix of the enum values, you will get an array with all the translated keys and values.
+
+File: **resources/lang/en/enums.php**
+```php
+return [
+    'digitalion' => [
+        'key1' => 'Value 1',
+        'key2' => 'Value 2',
+        'key3' => 'Value 3',
+    ],
+];
+```
+
+Use:
+```php
+$trans = DigitalionEnum::trans('enums.digitalion');
+
+// dump $trans
+[
+	'key1'	=> 'Value 1',
+	'key2'	=> 'Value 2',
+	'key3'	=> 'Value 3',
+]
 ```
 
 ## License

@@ -23,6 +23,12 @@ trait EnumSerializableTrait
 		return array_keys($arr);
 	}
 
+	public static function valuesImplode(): string
+	{
+		$constants = static::values();
+		return implode(',', $constants);
+	}
+
 	public static function valuesRegex(): string
 	{
 		$constants = static::values();
