@@ -6,6 +6,6 @@ class DummyClass
 {
 	public function __construct()
 	{
-
+		//
 	}
 }

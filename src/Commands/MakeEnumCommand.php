@@ -2,10 +2,13 @@
 
 namespace Digitalion\LaravelMakes\Commands;
 
+use Digitalion\LaravelMakes\Traits\MakeCommandTrait;
 use Illuminate\Console\GeneratorCommand;
 
 class MakeEnumCommand extends GeneratorCommand
 {
+	use MakeCommandTrait;
+
 	/**
 	 * The name and signature of the console command.
 	 *
@@ -44,16 +47,5 @@ class MakeEnumCommand extends GeneratorCommand
 			$stub = __DIR__ . "/../../stubs/$filename.stub";
 		}
 		return $stub;
-	}
-
-	/**
-	 * Get the default namespace for the class.
-	 *
-	 * @param  string  $rootNamespace
-	 * @return string
-	 */
-	protected function getDefaultNamespace($rootNamespace)
-	{
-		return $rootNamespace . '\Enums';
 	}
 }
