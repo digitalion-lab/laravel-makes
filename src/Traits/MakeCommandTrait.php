@@ -14,9 +14,9 @@ trait MakeCommandTrait
 	protected function getStub()
 	{
 		$filename = strtolower($this->type);
-		$stub = app_path("stubs/{$filename}.stub");
+		$stub = app_path("stubs/$filename.stub");
 		if (!file_exists($stub)) {
-			$stub = __DIR__ . "/../../stubs/{$filename}.stub";
+			$stub = __DIR__ . "/../../stubs/$filename.stub";
 		}
 		return $stub;
 	}
@@ -30,6 +30,6 @@ trait MakeCommandTrait
 	protected function getDefaultNamespace($rootNamespace)
 	{
 		$typePlural = Str::plural($this->type);
-		return "{$rootNamespace}\{$typePlural}";
+		return $rootNamespace . '\\' . $typePlural;
 	}
 }
