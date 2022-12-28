@@ -56,6 +56,14 @@ Create a new helper class in: `App\Helpers\`
 php artisan make:helper DigitalionHelper
 ```
 
+### make:interface
+
+Create a new query scope class in: `App\Interfaces\`
+
+```shell
+php artisan make:interface DigitalionInterface
+```
+
 ### make:scope
 
 Create a new query scope class in: `App\Scopes\`
