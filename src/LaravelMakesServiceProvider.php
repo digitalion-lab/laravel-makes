@@ -6,6 +6,7 @@ use Digitalion\LaravelMakes\Commands\MakeClassCommand;
 use Digitalion\LaravelMakes\Commands\MakeEnumCommand;
 use Digitalion\LaravelMakes\Commands\MakeHelperCommand;
 use Digitalion\LaravelMakes\Commands\MakeInterfaceCommand;
+use Digitalion\LaravelMakes\Commands\MakeRepositoryCommand;
 use Digitalion\LaravelMakes\Commands\MakeScopeCommand;
 use Digitalion\LaravelMakes\Commands\MakeServiceCommand;
 use Digitalion\LaravelMakes\Commands\MakeTraitCommand;
@@ -47,6 +48,7 @@ class LaravelMakesServiceProvider extends ServiceProvider
 				MakeEnumCommand::class,
 				MakeHelperCommand::class,
 				MakeInterfaceCommand::class,
+				MakeRepositoryCommand::class,
 				MakeScopeCommand::class,
 				MakeServiceCommand::class,
 				MakeTraitCommand::class,
